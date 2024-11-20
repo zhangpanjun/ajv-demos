@@ -1,0 +1,33 @@
+{
+    "$id":"http://www.makinokun.cn/assets/schemas/address.json",
+    "type": "object",
+    "title": "公用地址schema",
+    "description": "此文件盛放公用地址schema的一些配置项;",
+    "$comment": "凡是想要使用此模式的即可引用此schema的唯一标识$id的值",
+    "properties": {
+        "cities":{
+            "type":"string",
+            "errorMessage":{
+                "type":"城市必填"
+            }
+        },
+        "country":{
+            "type":"string",
+            "errorMessage":{
+                "type":"国家必填"
+            }
+        },
+        "street":{
+            "type":"number",
+            "errorMessage":{
+                "type":"街道必填"
+            }
+        },
+        "JSONPointer":{
+            "type":"string"
+        }
+        
+    },
+    "required": ["cities","country","street"]
+
+}

@@ -1,0 +1,42 @@
+{
+    "$id":"https://example.com/schemas/combina",
+    "type": "object",
+    "title": "组合模式关键字schema",
+    "description": "此文件盛放组合模式关键字schema的一些配置项;",
+    "properties": {
+        "friendsAge":{
+            "type":"array",
+            "items": {
+                "type":"integer",
+                "allOf": [
+                    {
+                        "maximum": 48,
+                        "$comment": "每个项的最大值必须小于等于40"
+                    }
+                ],
+                "oneOf": [
+                    {
+                        "multipleOf":2 
+                    },
+                    {
+                        "multipleOf": 3,
+                        "$comment": "每个项的值必须满足是2的倍数或者3的倍数（且不能同时满足）"
+                    }
+                ],
+                "not":{
+                    "enum": [3],
+                    "$comment": "项的值不能是3"
+                }
+            }
+            
+        },
+        "cities":{
+            "anyOf": [
+                {"minimum": 2, "type":"number"},
+                {"type":"string"}
+            ]
+        }
+        
+    }
+    
+}
