@@ -7,5 +7,7 @@ npm install
 npm run dev
 # 构建
 npm run build
-# 关于json schema相关的一些demo,请移步代码仓 https://github.com/zhangpanjun/jsonSchema
-# 在使用ajv插件前，强烈建议先具备 json schema的一些基础知识。欢迎移步本人关于 json schema的理解博客，地址：
+# 关于json schema相关的一些demo,
+请移步代码仓 https://github.com/zhangpanjun/jsonSchema
+# 在使用ajv插件前，强烈建议先具备 json schema的一些基础知识。
+欢迎移步本人关于 json schema的理解博客，地址：https://blog.csdn.net/zhangpanjun/article/details/142368622
